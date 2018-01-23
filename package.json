@@ -1,0 +1,28 @@
+{
+  "name": "@jag82/randy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "randy.js",
+  "scripts": {
+    "test": "tape tests/**/*.tests.js | tap-notify | faucet || true",
+    "test-watch": "chokidar-cmd -t **/*.js -t *.js -c \"npm run test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jag82/randy.git"
+  },
+  "keywords": [],
+  "author": "Jag Chadha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jag82/randy/issues"
+  },
+  "homepage": "https://github.com/jag82/randy#readme",
+  "devDependencies": {
+    "chokidar-cmd": "^1.2.1",
+    "faucet": "0.0.1",
+    "tap-notify": "^1.0.0",
+    "tape": "^4.8.0",
+    "tape-catch": "^1.0.6"
+  }
+}
