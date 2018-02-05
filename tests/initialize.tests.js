@@ -8,7 +8,6 @@ const Randy = require('./../randy.js');
 // 
 test('initialize with defaults', function(t) {
     const r = new Randy();
-    t.fail();
     t.deepEqual(r.items, [], 'init items array');
     t.ok(r.options, 'init options');
     t.end();
