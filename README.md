@@ -52,6 +52,7 @@ const options = {
     selection: 'random' //random, fifo, lifo
 };
 const r = new Randy(options);
+const r2 = new Randy([1, 2, 3], options);
 ```
 
 Dynamically add/remove items:
