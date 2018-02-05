@@ -5,7 +5,8 @@
   "main": "randy.js",
   "scripts": {
     "test": "nyc tape tests/**/*.tests.js | tap-notify | tap-nyc",
-    "test-watch": "chokidar-cmd -t **/*.js -t *.js -c \"npm run test\""
+    "watch": "chokidar-cmd -t **/*.js -t *.js -c \"npm run test\"",
+    "coverage": "nyc report | coveralls"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/jag82/randy#readme",
   "devDependencies": {
     "chokidar-cmd": "^1.2.1",
+    "coveralls": "^3.0.0",
     "tap-notify": "^1.0.0",
     "tap-nyc": "^1.0.3",
     "tape": "^4.8.0",
