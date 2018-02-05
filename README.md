@@ -106,3 +106,12 @@ r.reset();
 statistics
 
 frequency
+
+rename repo (hat?), will affect travis-ci, coveralls
+
+publish to npm
+
+integrate to piano tool
+
+
+
