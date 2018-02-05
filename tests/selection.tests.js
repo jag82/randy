@@ -6,10 +6,10 @@ const Randy = require('./../randy.js');
 
 // SELECTION TESTS
 // 
-test('', function(t) {
-    const r = new Randy();
+test.skip('', function(t) {
+    const r = new Ran2dy();
 
-    t.deepEqual(r.items, []);
+    t.deepEqual(r.items, [ ]);
     t.ok(r.options);
     t.end();
 });

@@ -4,7 +4,7 @@
   "description": "",
   "main": "randy.js",
   "scripts": {
-    "test": "tape tests/**/*.tests.js | tap-notify | faucet || true",
+    "test": "nyc tape tests/**/*.tests.js | tap-notify | tap-nyc || true",
     "test-watch": "chokidar-cmd -t **/*.js -t *.js -c \"npm run test\""
   },
   "repository": {
@@ -20,8 +20,8 @@
   "homepage": "https://github.com/jag82/randy#readme",
   "devDependencies": {
     "chokidar-cmd": "^1.2.1",
-    "faucet": "0.0.1",
     "tap-notify": "^1.0.0",
+    "tap-nyc": "^1.0.3",
     "tape": "^4.8.0",
     "tape-catch": "^1.0.6"
   }

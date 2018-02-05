@@ -1,5 +1,5 @@
 
-function Randy(arg1 = [], arg2 = {}) {
+function Randy(arg1, arg2) {
     let items, options;
     if(typeof arg1 === 'object') {
         if(Array.isArray(arg1)) {
@@ -11,17 +11,15 @@ function Randy(arg1 = [], arg2 = {}) {
             options = arg1;
             items = [];
         }
-    } else if(typeof arg1 !== 'undefined'){
-        //items
-        items = [].concat(arg1);
     } else {
-        //empty constructor
-        items = [];
+        //items or empty constructor
+        items = [].concat(arg1 || []);
     }
 
     this.items = items;
-    this.options = options;
-    // this.options = {};
+    this.options = Object.assign({
+        //TODO: default options
+    }, options || {});
 }
 
 Randy.prototype.add = function(...items) {
